@@ -14,8 +14,11 @@ public class Vendedor extends Pessoa {
     @Override
     public String toString() {
         return "Vendedor{" +
-                "qtdVendas=" + qtdVendas +
-                ", taxaDeComissao=" + taxaDeComissao +
+                "nome: " + getNome() +
+                " idade: " + getIdade() +
+                " peso: " + getPeso() +
+                " qtdVendas=" + qtdVendas +
+                " taxaDeComissao=" + taxaDeComissao +
                 '}';
     }
 }

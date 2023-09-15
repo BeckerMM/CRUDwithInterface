@@ -14,8 +14,11 @@ public class Cliente extends Pessoa {
     @Override
     public String toString() {
         return "Cliente{" +
-                "saldo=" + saldo +
-                ", qtdCompras=" + qtdCompras +
+                "nome: " + getNome() +
+                " idade: " + getIdade() +
+                " peso: " + getPeso() +
+                " saldo=" + saldo +
+                " qtdCompras=" + qtdCompras +
                 '}';
     }
 }

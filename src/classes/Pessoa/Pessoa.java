@@ -12,14 +12,15 @@ public abstract class Pessoa {
         this.peso = peso;
     }
 
+    public String getNome() {
+        return nome;
+    }
 
+    public int getIdade() {
+        return idade;
+    }
 
-    @Override
-    public String toString() {
-        return "Pessoa{" +
-                "nome='" + nome + '\'' +
-                ", idade=" + idade +
-                ", peso=" + peso +
-                '}';
+    public double getPeso() {
+        return peso;
     }
 }

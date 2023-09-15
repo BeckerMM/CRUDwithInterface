@@ -26,6 +26,7 @@ public class BancoPessoa implements ICrud<Integer, Pessoa> {
     @Override
     public Pessoa update(Integer id, Pessoa object) {
         if (this.listPessoa.get(id)!=null){
+            System.out.println("foi'");
             this.listPessoa.set(id,object);
         }
         return null;

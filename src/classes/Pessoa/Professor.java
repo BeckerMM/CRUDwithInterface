@@ -15,8 +15,11 @@ public class Professor extends Pessoa{
     @Override
     public String toString() {
         return "Professor{" +
-                "disciplina='" + disciplina + '\'' +
-                ", qtdTurmas=" + qtdTurmas +
+                "nome: " + getNome() +
+                " idade: " + getIdade() +
+                " peso: " + getPeso() +
+                " disciplina='" + disciplina + '\'' +
+                " qtdTurmas=" + qtdTurmas +
                 '}';
     }
 }
