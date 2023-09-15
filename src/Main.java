@@ -83,20 +83,9 @@ public class Main {
         System.out.println("Informe o id:");
         int id = sc.nextInt();
         switch (decisao) {
-            case 1 -> {
-                if (interacaoPessoa.remove(id)) {
-                    System.out.println("Pessoa foi removida!");
-                } else {
-                    System.out.println("Não encontrado!");
-                }
-            }
-            case 2 -> {
-                if (interacaoAutomovel.remove(id)) {
-                    System.out.println("Automovél removido!");
-                } else {
-                    System.out.println("Não encontrado!");
-                }
-            }default -> System.out.println("Valor Inválido!");
+            case 1 -> interacaoPessoa.remove(id);
+            case 2 -> interacaoAutomovel.remove(id);
+            default -> System.out.println("Valor Inválido!");
         }
     }
 }

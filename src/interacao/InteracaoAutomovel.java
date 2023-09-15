@@ -4,8 +4,8 @@ import classes.Automovel.*;
 import java.util.ArrayList;
 
 public class InteracaoAutomovel implements IInteracao<Integer, Automovel> {
-    private static Interacao interacao;
-    private static BancoAutomovel bancoAutomovel;
+    private static Interacao interacao = new Interacao();
+    private static BancoAutomovel bancoAutomovel = new BancoAutomovel();
     private int escolhaEspecifica() {
         int decisao = interacao.printInt("""
                 ===== Escolha Especifica =====

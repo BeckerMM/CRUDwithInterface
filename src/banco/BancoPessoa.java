@@ -18,7 +18,8 @@ public class BancoPessoa implements ICrud<Integer, Pessoa> {
     @Override
     public boolean remove(Integer id) {
         if(this.listPessoa.get(id)!= null && listPessoa.size()>0){
-            this.listPessoa.remove(id.intValue());
+            this.listPessoa.remove(id);
+            return true;
         }
         return false;
     }

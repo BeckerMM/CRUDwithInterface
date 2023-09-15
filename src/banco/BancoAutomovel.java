@@ -19,7 +19,7 @@ public class BancoAutomovel implements ICrud<Integer, Automovel> {
     @Override
     public boolean remove(Integer id) {
         if (this.listAutomovel.get(id) != null) {
-            this.listAutomovel.remove(id.intValue());
+            this.listAutomovel.remove(id);
             return true;
         }
         return false;
